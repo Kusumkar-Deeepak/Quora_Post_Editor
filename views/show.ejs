@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .post-details {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 900px;
+            width: 90%;
+            margin: 20px;
+        }
+        .post-details h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .post-details p {
+            font-size: 26px;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-details">
+        <h1>Here Is Your Post In Detail</h1>
+        <div>
+            <h1>Post Username: @<%= post.Username %></h1>
+            <p>[ Post Content ]: <%= post.content %></p>
+            <h5>[ Post Id ]: <%= post.id %></h5>
+        </div>
+    </div>
+</body>
+</html>
